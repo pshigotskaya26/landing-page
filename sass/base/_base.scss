@@ -28,6 +28,10 @@ body {
 	font-size: 14px;
 	font-family: 'Poppins', Arial, Verdana, sans-serif;
 	color: $color-black;
+
+	&.lock {
+		overflow: hidden;
+	}
 }
 
 h1 {
@@ -54,5 +58,20 @@ h2 {
 		-moz-border-radius: 50%;
 		-webkit-border-radius: 50%;
 		border-radius: 50%;
+	}
+}
+
+.hidden-block {
+	display: none;
+
+	&.active {
+		position: fixed;
+    	top: 0;
+    	left: 0;
+    	bottom: 0;
+    	right: 0;
+    	display: block;
+    	background-color: rgba(255, 255, 255, 0.75);
+    	z-index: 9990;
 	}
 }
