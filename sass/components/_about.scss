@@ -1,0 +1,31 @@
+.about {
+    position: relative;
+    min-height: 800px;
+    background-image: url('../assets/img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__content {
+        padding-top: 206px;
+    }
+
+    &__subtitle {
+        padding-left: 10px;
+        padding-bottom: 8px;
+    }
+
+    &__title {
+        padding-bottom: 34px;
+        line-height: 60px;
+        & span {
+            display: block;
+        }
+    }
+
+    &__link {
+        padding-left: 40px;
+        color: $color-black;
+        font-weight: bold;
+    }
+    
+}
