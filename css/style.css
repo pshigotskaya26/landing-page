@@ -67,10 +67,28 @@ h2::after {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
 }
 
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+}
+.icon_github {
+  background-image: url("../assets/svg/github.svg");
+}
+.icon_instagramm {
+  background-image: url("../assets/svg/instagram.svg");
+}
+.icon_facebook {
+  background-image: url("../assets/svg/facebook.svg");
+}
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
-  padding-left: 10px;
 }
 
 .about {
@@ -79,6 +97,14 @@ h2::after {
   background-image: url("../assets/img/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+.about__social-network {
+  position: absolute;
+  top: 47.8%;
+  left: -104px;
+  transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
 }
 .about__content {
   padding-top: 206px;
@@ -90,14 +116,40 @@ h2::after {
 .about__title {
   padding-bottom: 34px;
   line-height: 60px;
+  letter-spacing: 1.1px;
 }
 .about__title span {
   display: block;
+  letter-spacing: 2px;
 }
 .about__link {
   padding-left: 40px;
   color: #000000;
   font-weight: bold;
+}
+
+.social-network {
+  display: flex;
+  align-items: center;
+  column-gap: 14px;
+}
+.social-network__text {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+.social-network__line {
+  width: 70px;
+  height: 0;
+  border-top: 2px solid #000000;
+}
+
+.social-links {
+  display: flex;
+  column-gap: 14px;
+}
+.social-links__item {
+  display: inline-block;
 }
 
 /*# sourceMappingURL=style.css.map */

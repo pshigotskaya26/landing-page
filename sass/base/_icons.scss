@@ -1,0 +1,21 @@
+.icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+     transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+
+    &_github {
+        background-image: url("../assets/svg/github.svg");
+    }
+
+    &_instagramm {
+        background-image: url("../assets/svg/instagram.svg");
+    }
+
+    &_facebook {
+        background-image: url("../assets/svg/facebook.svg");
+    }
+}
