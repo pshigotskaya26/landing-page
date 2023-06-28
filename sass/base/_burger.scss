@@ -1,9 +1,3 @@
-.about__burger {
-  position: absolute;
-  top: 19px;
-  right: 30px;
-}
-
 .burger {
   display: flex;
   flex-direction: column;
@@ -29,7 +23,7 @@
     &:before,
     & span,
     &:after {
-      background: $color-primery;
+      background-color: $color-primery;
       transition: all 0.3s ease-out;
     }
   }
@@ -63,7 +57,7 @@
   &:hover {
     & span,
     &:after {
-      background: $color-white;
+      background-color: $color-white;
       transition: all 0.3s ease-out;
     }
   }
