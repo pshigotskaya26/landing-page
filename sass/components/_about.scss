@@ -94,7 +94,7 @@
     width: 345px;
     height: 800px;
     background-color: $color-primery;
-    transition: left 0.8s ease-out;
+    transition: left 1s ease-in-out;
 
     @media (max-width: 1340px) {
       height: calc(640px + (800 - 640) * ((100vw - 320px) / (1340 - 320)));

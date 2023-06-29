@@ -20,7 +20,7 @@ burgerClose.addEventListener("click", () => {
 for (let i = 0; i < navigationLink.length; i++) {
   navigationLink[i].addEventListener("click", () => {
     aboutNavigationBlock.classList.toggle("active");
-    hiddenBlock.classList.toggle("active");
     body.classList.toggle("lock");
+    hiddenBlock.classList.toggle("active");
   });
 }

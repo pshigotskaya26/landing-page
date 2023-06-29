@@ -1,77 +1,77 @@
 @import "../abstract/constants";
 
 * {
-	padding: 0;
-	margin: 0;
-	border: 0;
-	outline: none;
-	text-decoration: none;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  text-decoration: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-	scroll-behavior: smooth;
-	background-color: $color-white;
+html,
+body {
+  scroll-behavior: smooth;
+  background-color: $color-white;
 }
 
 body {
-	height: 100%;
+  height: 100%;
 }
 
 ul {
-	list-style: none;
+  list-style: none;
 }
 
 body {
-	font-size: 14px;
-	font-family: 'Poppins', Arial, Verdana, sans-serif;
-	color: $color-black;
+  font-size: 14px;
+  font-family: "Poppins", Arial, Verdana, sans-serif;
+  color: $color-black;
 
-	&.lock {
-		overflow: hidden;
-	}
+  &.lock {
+    overflow: hidden;
+  }
 }
 
 h1 {
-	font-size: 48px;
-	font-weight: bold;
+  font-size: 48px;
+  font-weight: bold;
 }
 
-
 h2 {
-	position: relative;
-	z-index: 1;
-	font-size: 16px;
-	font-weight: bold;
+  position: relative;
+  z-index: 1;
+  font-size: 16px;
+  font-weight: bold;
 
-	&::after {
-		content: '';
-		position: absolute;
-		top: -6px;
-		left: -1px;
-		z-index: -1;
-		width: 36px;
-		height: 36px;
-		background-color: $color-primery;
-		-moz-border-radius: 50%;
-		-webkit-border-radius: 50%;
-		border-radius: 50%;
-	}
+  &::after {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: -1px;
+    z-index: -1;
+    width: 36px;
+    height: 36px;
+    background-color: $color-primery;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+  }
 }
 
 .hidden-block {
-	display: none;
+  display: none;
 
-	&.active {
-		position: fixed;
-    	top: 0;
-    	left: 0;
-    	bottom: 0;
-    	right: 0;
-    	display: block;
-    	background-color: rgba(255, 255, 255, 0.75);
-    	z-index: 9990;
-	}
+  &.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.75);
+    z-index: 9990;
+  }
 }
