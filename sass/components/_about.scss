@@ -43,20 +43,18 @@
   }
 
   &__content {
-    padding-top: 206px;
+    padding-top: 201px;
 
     @media (max-width: $mobile-width) {
-      padding-top: 196px;
+      padding-top: 191px;
     }
   }
 
   &__subtitle {
     padding-left: 10px;
-    padding-bottom: 8px;
 
     @media (max-width: $mobile-width) {
       font-size: 16px;
-      padding-bottom: 6px;
     }
   }
 

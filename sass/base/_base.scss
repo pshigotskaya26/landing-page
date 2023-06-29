@@ -41,24 +41,12 @@ h1 {
 }
 
 h2 {
-  position: relative;
-  z-index: 1;
+  padding: 10px;
   font-size: 16px;
   font-weight: bold;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: -6px;
-    left: -1px;
-    z-index: -1;
-    width: 36px;
-    height: 36px;
-    background-color: $color-primery;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-  }
+  line-height: 17px;
+  background-image: url('../assets/svg/circle.svg');
+  background-repeat: no-repeat;
 }
 
 .hidden-block {
