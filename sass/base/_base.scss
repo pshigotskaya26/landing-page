@@ -45,8 +45,39 @@ h2 {
   font-size: 16px;
   font-weight: bold;
   line-height: 17px;
-  background-image: url('../assets/svg/circle.svg');
+  background-image: url("../assets/svg/circle.svg");
   background-repeat: no-repeat;
+}
+
+h3 {
+  position: relative;
+  padding-bottom: 30px;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 60px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 6px;
+    left: 50%;
+    margin-left: -29px;
+    width: 60px;
+    height: 0px;
+    border-bottom: 3px solid $color-primery;
+  }
+}
+
+h4 {
+  padding-left: 42px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .hidden-block {
