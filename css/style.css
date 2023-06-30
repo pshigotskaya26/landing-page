@@ -230,6 +230,9 @@ h5 {
 .form .button {
   padding: 15px 31px;
 }
+.form .error {
+  color: #ff0101;
+}
 
 .data__item {
   position: relative;

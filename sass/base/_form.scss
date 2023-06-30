@@ -40,6 +40,10 @@
   & .button {
     padding: 15px 31px;
   }
+
+  & .error {
+    color: $color-red;
+  }
 }
 
 .data {

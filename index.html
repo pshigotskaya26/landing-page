@@ -198,27 +198,31 @@
             <p class="contacts__text">Или оставьте ваши данные и я сама вам напишу:</p>
 
             <div class="contacts__form">
-              <form class="form">
+              <form class="form" method="" action="" onsubmit="validateForm();return false">
                 <div class="form__data">
                   <div class="data__item">
                     <label class="data__title" for="name">Ваше имя</label>
-                    <input class="data__input" type="text" id="name" name="name" placeholder="Иван">
+                    <input class="data__input" type="text" onkeyup="validateName()" id="name" name="name" placeholder="Иван">
+                    <span id="name-error" class="error"></span>
                   </div>
                   <div class="data__item">
                     <label class="data__title" for="email">Ваша почта</label>
-                    <input class="data__input" type="email" id="email" name="email">
+                    <input class="data__input" type="email" id="email" name="email" onkeyup="validateEmail()">
+                    <span id="email-error" class="error"></span>
                   </div>
                 </div>
                 <div class="form__message">
                   <label class="message__title" for="message">Ваше сообщение</label>
-                  <textarea class="message__text" id="message" name="message"></textarea>              
+                  <textarea class="message__text" id="message" name="message" onkeyup="validateMessage()"></textarea>   
+                  <span id="text-error" class="error"></span>           
                 </div>
                 <div class="form__policy">
                   <input id="policy" class="policy__checkbox" name="policy" type="checkbox" >
                   <label for="policy" class="policy__text">Я согласен(а) с <a href="/">политикой<br> конфиденциальности</a></label>
+                  <!-- <span id="policy-error" class="error">policy is required</span>   -->
                 </div>
                 <div class="form__button">
-                  <button class="button" type="submit">Отправить сообщение</button>
+                  <button class="button" type="submit" onsubmit="validateForm();return false">Отправить сообщение</button>
                 </div>
               </form>
             </div>
@@ -227,5 +231,6 @@
       </div>
     </section>
     <script src="js/burger.js"></script>
+    <script src="js/form.js"></script>
   </body>
 </html>
