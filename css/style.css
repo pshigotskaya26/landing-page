@@ -610,16 +610,16 @@ h5 {
   font-weight: 500;
 }
 .location_university {
-  background-image: url("../../assets/svg/university.svg"), url("../assets/svg/circle.svg");
+  background-image: url("../assets/svg/university.svg"), url("../assets/svg/circle.svg");
 }
 .location_courses {
-  background-image: url("../../assets/svg/courses.svg"), url("../assets/svg/circle.svg");
+  background-image: url("../assets/svg/courses.svg"), url("../assets/svg/circle.svg");
 }
 .location_developer {
-  background-image: url("../../assets/svg/developer.svg"), url("../assets/svg/circle.svg");
+  background-image: url("../assets/svg/developer.svg"), url("../assets/svg/circle.svg");
 }
 .location_designer {
-  background-image: url("../../assets/svg/designer.svg"), url("../assets/svg/circle.svg");
+  background-image: url("../assets/svg/designer.svg"), url("../assets/svg/circle.svg");
 }
 
 .contacts {
