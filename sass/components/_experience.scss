@@ -1,0 +1,127 @@
+.experience {
+  padding-top: 120px;
+
+  &__subtitle {
+    text-align: center;
+    background-position: center;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+    row-gap: 52px;
+    flex-wrap: wrap;
+    padding: 53px 80px 0 72px;
+
+    @media (max-width: 1034px) {
+      padding-left: 35px;
+      padding-right: 35px;
+    }
+
+    @media (max-width: $medium-width) {
+      justify-content: center;
+    }
+
+    @media (max-width: $mobile-width) {
+      padding-top: 4px;
+      padding-left: 6px;
+      padding-right: 0;
+    }
+  }
+
+  &__group {
+    width: 425px;
+
+    @media (max-width: 955px) {
+      width: 320px;
+    }
+
+    @media (max-width: $small-width) {
+      width: 100%;
+    }
+  }
+
+  &__info {
+    position: relative;
+    padding-left: 42px;
+    border-left: 1px solid $color-black;
+
+    @media (max-width: $mobile-width) {
+      padding-top: 47px;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: -15px;
+      left: -8px;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: $color-primery;
+    }
+  }
+
+  &__item {
+    padding-top: 47px;
+
+    @media (max-width: $mobile-width) {
+      padding-top: 0px;
+      padding-bottom: 5px;
+    }
+  }
+
+  &__location {
+    position: relative;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    background-repeat: no-repeat;
+    background-position: 20px 15px, left top;
+
+    @media (max-width: $mobile-width) {
+      padding-bottom: 5px;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 17px;
+      left: -42px;
+      width: 42px;
+      height: 0px;
+      border-top: 1px solid $color-black;
+    }
+  }
+
+  &__description {
+    font-size: 12px;
+  }
+}
+
+.location {
+  &__text {
+    font-size: 12;
+    font-weight: 500;
+  }
+
+  &_university {
+    background-image: url("../../assets/svg/university.svg"),
+      url("../assets/svg/circle.svg");
+  }
+
+  &_courses {
+    background-image: url("../../assets/svg/courses.svg"),
+      url("../assets/svg/circle.svg");
+  }
+
+  &_developer {
+    background-image: url("../../assets/svg/developer.svg"),
+      url("../assets/svg/circle.svg");
+  }
+
+  &_designer {
+    background-image: url("../../assets/svg/designer.svg"),
+      url("../assets/svg/circle.svg");
+  }
+}
