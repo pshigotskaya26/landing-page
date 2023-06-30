@@ -1,0 +1,72 @@
+.form {
+  &__data {
+    display: flex;
+    column-gap: 20px;
+    padding-bottom: 30px;
+  }
+
+  &__message {
+    position: relative;
+    padding-bottom: 21px;
+  }
+
+  & .button {
+    padding: 15px 31px;
+  }
+}
+
+.data {
+  &__item {
+    position: relative;
+    flex: 1 1 auto;
+  }
+
+  &__title {
+    position: absolute;
+    top: -7px;
+    left: 11px;
+    padding: 0 10px;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: $color-white;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 15px 19px;
+    border: 1px solid $color-black;
+    &::placeholder {
+      color: $color-black;
+    }
+
+    &:-ms-input-placeholder {
+      color: $color-black;
+    }
+
+    &::-ms-input-placeholder {
+      color: $color-black;
+    }
+  }
+}
+
+.message {
+  &__title {
+    position: absolute;
+    z-index: 1;
+    top: -8px;
+    left: 11px;
+    padding: 0 10px;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: $color-white;
+  }
+
+  &__text {
+    position: relative;
+    width: 100%;
+    min-height: 190px;
+    padding: 15px;
+    resize: none;
+    border: 1px solid $color-black;
+  }
+}
