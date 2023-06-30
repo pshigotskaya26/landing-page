@@ -6,7 +6,9 @@ let nameValue = document.getElementById("name");
 let emailValue = document.getElementById("email");
 let messageValue = document.getElementById("message");
 
-const validateForm = () => {
+const data = {};
+
+const validateForm = async () => {
     if (!validateName() || !validateEmail() || !validateMessage()) {
         return false;
     }
@@ -14,24 +16,38 @@ const validateForm = () => {
         nameValue.value = '';
         emailValue.value = '';
         messageValue.value = '';
-        return true;
+
+        try {
+            const response = await fetch(URL, {
+                method: 'Post',
+                body: JSON.stringify(data),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+
+            const json = await response.json();
+            console.log('Form data are successfully delivered.')
+        }
+        catch (error) {
+            console.log('Error: ', error.message);
+        }
     }
 };
 
 const validateName = () => {
-    //let nameValue = document.getElementById("name").value;
-    
     if (nameValue.value.length === 0) {
         nameError.innerHTML = "name's length must be >=3";
         return false;
     }
 
     if (!nameValue.value.match(/^[A-ZА-Я]{1}[а-яА-Яa-zA-Z]{2,}$/)) {
-        nameError.innerHTML = "First letter of the name must be in Upper case";
+        nameError.innerHTML = "the 1-th letter must be in Upper case";
         return false;
     }
 
     nameError.innerHTML = '';
+    data.name = nameValue.value;
     return true;
 };
 
@@ -47,6 +63,7 @@ const validateEmail = () => {
     }
 
     emailError.innerHTML = '';
+    data.email = emailValue.value;
     return true;
 };
 
@@ -63,5 +80,6 @@ const validateMessage = () => {
     }
 
     messageError.innerHTML = '';
+    data.message = messageValue.value;
     return true;
 };
