@@ -3,11 +3,38 @@
     display: flex;
     column-gap: 20px;
     padding-bottom: 30px;
+
+    @media (max-width: $mobile-width) {
+      flex-direction: column;
+      row-gap: 25px;
+      padding-bottom: 27px;
+    }
   }
 
   &__message {
     position: relative;
     padding-bottom: 21px;
+
+    @media (max-width: $mobile-width) {
+      padding-bottom: 16px;
+    }
+  }
+
+  &__policy {
+    display: none;
+
+    @media (max-width: $mobile-width) {
+      display: flex;
+      justify-content: center;
+      column-gap: 10px;
+      padding-bottom: 19px;
+    }
+  }
+
+  &__button {
+    @media (max-width: $mobile-width) {
+      text-align: center;
+    }
   }
 
   & .button {
@@ -68,5 +95,20 @@
     padding: 15px;
     resize: none;
     border: 1px solid $color-black;
+
+    @media (max-width: $mobile-width) {
+      min-height: 140px;
+    }
+  }
+}
+
+.policy {
+  &__text {
+    font-size: 12px;
+    font-weight: 500;
+
+    & a {
+      color: $color-blue;
+    }
   }
 }
